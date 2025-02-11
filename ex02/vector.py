@@ -6,6 +6,8 @@ class Vector:
         else:
             self.shape = (1, len(self.values[0]))
 
+
+
 def __add__(self, op):
     if (self.shape == op.shape):
         if (self.shape[0] == 1):
@@ -64,6 +66,7 @@ def __mul__(self, op):
     return NotImplemented
 
 def __rmul__(self, op):
+
     # mul & rmul: only scalars (to perform multiplication of a Vector by a scalar).
 
 def __str__(self, op):
